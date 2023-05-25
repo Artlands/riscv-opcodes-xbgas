@@ -1,0 +1,39 @@
+eld    rd rs1 imm12 14..12=3 6..2=0x1D 1..0=3
+elw    rd rs1 imm12 14..12=2 6..2=0x1D 1..0=3
+elh    rd rs1 imm12 14..12=1 6..2=0x1D 1..0=3
+elhu   rd rs1 imm12 14..12=5 6..2=0x1D 1..0=3
+elb    rd rs1 imm12 14..12=0 6..2=0x1D 1..0=3
+elbu   rd rs1 imm12 14..12=4 6..2=0x1D 1..0=3
+elq    rd rs1 imm12 14..12=6 6..2=0x1D 1..0=3
+ele    rd rs1 imm12 14..12=7 6..2=0x1D 1..0=3
+esd    imm12hi rs1 rs2 imm12lo 14..12=3 6..2=0x1E 1..0=3
+esw    imm12hi rs1 rs2 imm12lo 14..12=2 6..2=0x1E 1..0=3
+esh    imm12hi rs1 rs2 imm12lo 14..12=1 6..2=0x1E 1..0=3
+esb    imm12hi rs1 rs2 imm12lo 14..12=0 6..2=0x1E 1..0=3
+esq    imm12hi rs1 rs2 imm12lo 14..12=4 6..2=0x1E 1..0=3
+ese    imm12hi rs1 rs2 imm12lo 14..12=5 6..2=0x1E 1..0=3
+erld   rd rs1 rs2 31..25=85 14..12=3 6..2=0x0C 1..0=3
+erlw   rd rs1 rs2 31..25=85 14..12=2 6..2=0x0C 1..0=3
+erlh   rd rs1 rs2 31..25=85 14..12=1 6..2=0x0C 1..0=3
+erlhu  rd rs1 rs2 31..25=85 14..12=5 6..2=0x0C 1..0=3
+erlb   rd rs1 rs2 31..25=85 14..12=0 6..2=0x0C 1..0=3
+erlbu  rd rs1 rs2 31..25=85 14..12=4 6..2=0x0C 1..0=3
+erle   rd rs1 rs2 31..25=33 14..12=4 6..2=0x0C 1..0=3
+ersd   rd rs1 rs2 31..25=34 14..12=3 6..2=0x0C 1..0=3
+ersw   rd rs1 rs2 31..25=34 14..12=2 6..2=0x0C 1..0=3
+ersh   rd rs1 rs2 31..25=34 14..12=1 6..2=0x0C 1..0=3
+ersb   rd rs1 rs2 31..25=34 14..12=0 6..2=0x0C 1..0=3
+erse   rd rs1 rs2 31..25=35 14..12=3 6..2=0x0C 1..0=3
+eaddi  rd rs1 imm12 14..12=6 6..2=0x1E 1..0=3
+eaddie rd rs1 imm12 14..12=7 6..2=0x1E 1..0=3
+eaddix rd rs1 imm12 14..12=7 6..2=0x00 1..0=3
+ebld   rd rs1 rs2 rs3 26..25=3 14..12=3 6..2=0x10 1..0=3
+eblw   rd rs1 rs2 rs3 26..25=3 14..12=2 6..2=0x10 1..0=3
+eblh   rd rs1 rs2 rs3 26..25=3 14..12=1 6..2=0x10 1..0=3
+eblhu  rd rs1 rs2 rs3 26..25=3 14..12=5 6..2=0x10 1..0=3
+eblb   rd rs1 rs2 rs3 26..25=3 14..12=0 6..2=0x10 1..0=3
+eblbu  rd rs1 rs2 rs3 26..25=3 14..12=4 6..2=0x10 1..0=3
+ebsd   rd rs1 rs2 rs3 26..25=2 14..12=3 6..2=0x10 1..0=3
+ebsw   rd rs1 rs2 rs3 26..25=2 14..12=2 6..2=0x10 1..0=3
+ebsh   rd rs1 rs2 rs3 26..25=2 14..12=1 6..2=0x10 1..0=3
+ebsb   rd rs1 rs2 rs3 26..25=2 14..12=0 6..2=0x10 1..0=3
