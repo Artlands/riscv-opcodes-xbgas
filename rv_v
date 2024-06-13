@@ -24,18 +24,10 @@ vle8.v         nf 28=0 27..26=0 vm 24..20=0 rs1 14..12=0x0  vd 6..0=0x07
 vle16.v        nf 28=0 27..26=0 vm 24..20=0 rs1 14..12=0x5  vd 6..0=0x07
 vle32.v        nf 28=0 27..26=0 vm 24..20=0 rs1 14..12=0x6  vd 6..0=0x07
 vle64.v        nf 28=0 27..26=0 vm 24..20=0 rs1 14..12=0x7  vd 6..0=0x07
-vle128.v       nf 28=1 27..26=0 vm 24..20=0 rs1 14..12=0x0  vd 6..0=0x07
-vle256.v       nf 28=1 27..26=0 vm 24..20=0 rs1 14..12=0x5  vd 6..0=0x07
-vle512.v       nf 28=1 27..26=0 vm 24..20=0 rs1 14..12=0x6  vd 6..0=0x07
-vle1024.v      nf 28=1 27..26=0 vm 24..20=0 rs1 14..12=0x7  vd 6..0=0x07
 vse8.v         nf 28=0 27..26=0 vm 24..20=0 rs1 14..12=0x0 vs3 6..0=0x27
 vse16.v        nf 28=0 27..26=0 vm 24..20=0 rs1 14..12=0x5 vs3 6..0=0x27
 vse32.v        nf 28=0 27..26=0 vm 24..20=0 rs1 14..12=0x6 vs3 6..0=0x27
 vse64.v        nf 28=0 27..26=0 vm 24..20=0 rs1 14..12=0x7 vs3 6..0=0x27
-vse128.v       nf 28=1 27..26=0 vm 24..20=0 rs1 14..12=0x0 vs3 6..0=0x27
-vse256.v       nf 28=1 27..26=0 vm 24..20=0 rs1 14..12=0x5 vs3 6..0=0x27
-vse512.v       nf 28=1 27..26=0 vm 24..20=0 rs1 14..12=0x6 vs3 6..0=0x27
-vse1024.v      nf 28=1 27..26=0 vm 24..20=0 rs1 14..12=0x7 vs3 6..0=0x27
 
 # Vector Indexed-Unordered Instructions (including segment part)
 # https://github.com/riscv/riscv-v-spec/blob/master/v-spec.adoc#76-vector-indexed-instructions
@@ -43,18 +35,10 @@ vluxei8.v      nf 28=0 27..26=1 vm vs2 rs1 14..12=0x0  vd 6..0=0x07
 vluxei16.v     nf 28=0 27..26=1 vm vs2 rs1 14..12=0x5  vd 6..0=0x07
 vluxei32.v     nf 28=0 27..26=1 vm vs2 rs1 14..12=0x6  vd 6..0=0x07
 vluxei64.v     nf 28=0 27..26=1 vm vs2 rs1 14..12=0x7  vd 6..0=0x07
-vluxei128.v    nf 28=1 27..26=1 vm vs2 rs1 14..12=0x0  vd 6..0=0x07
-vluxei256.v    nf 28=1 27..26=1 vm vs2 rs1 14..12=0x5  vd 6..0=0x07
-vluxei512.v    nf 28=1 27..26=1 vm vs2 rs1 14..12=0x6  vd 6..0=0x07
-vluxei1024.v   nf 28=1 27..26=1 vm vs2 rs1 14..12=0x7  vd 6..0=0x07
 vsuxei8.v      nf 28=0 27..26=1 vm vs2 rs1 14..12=0x0 vs3 6..0=0x27
 vsuxei16.v     nf 28=0 27..26=1 vm vs2 rs1 14..12=0x5 vs3 6..0=0x27
 vsuxei32.v     nf 28=0 27..26=1 vm vs2 rs1 14..12=0x6 vs3 6..0=0x27
 vsuxei64.v     nf 28=0 27..26=1 vm vs2 rs1 14..12=0x7 vs3 6..0=0x27
-vsuxei128.v    nf 28=1 27..26=1 vm vs2 rs1 14..12=0x0 vs3 6..0=0x27
-vsuxei256.v    nf 28=1 27..26=1 vm vs2 rs1 14..12=0x5 vs3 6..0=0x27
-vsuxei512.v    nf 28=1 27..26=1 vm vs2 rs1 14..12=0x6 vs3 6..0=0x27
-vsuxei1024.v   nf 28=1 27..26=1 vm vs2 rs1 14..12=0x7 vs3 6..0=0x27
 
 # Vector Strided Instructions (including segment part)
 # https://github.com/riscv/riscv-v-spec/blob/master/v-spec.adoc#75-vector-strided-instructions
@@ -62,18 +46,10 @@ vlse8.v         nf 28=0 27..26=2 vm rs2 rs1 14..12=0x0  vd 6..0=0x07
 vlse16.v        nf 28=0 27..26=2 vm rs2 rs1 14..12=0x5  vd 6..0=0x07
 vlse32.v        nf 28=0 27..26=2 vm rs2 rs1 14..12=0x6  vd 6..0=0x07
 vlse64.v        nf 28=0 27..26=2 vm rs2 rs1 14..12=0x7  vd 6..0=0x07
-vlse128.v       nf 28=1 27..26=2 vm rs2 rs1 14..12=0x0  vd 6..0=0x07
-vlse256.v       nf 28=1 27..26=2 vm rs2 rs1 14..12=0x5  vd 6..0=0x07
-vlse512.v       nf 28=1 27..26=2 vm rs2 rs1 14..12=0x6  vd 6..0=0x07
-vlse1024.v      nf 28=1 27..26=2 vm rs2 rs1 14..12=0x7  vd 6..0=0x07
 vsse8.v         nf 28=0 27..26=2 vm rs2 rs1 14..12=0x0 vs3 6..0=0x27
 vsse16.v        nf 28=0 27..26=2 vm rs2 rs1 14..12=0x5 vs3 6..0=0x27
 vsse32.v        nf 28=0 27..26=2 vm rs2 rs1 14..12=0x6 vs3 6..0=0x27
 vsse64.v        nf 28=0 27..26=2 vm rs2 rs1 14..12=0x7 vs3 6..0=0x27
-vsse128.v       nf 28=1 27..26=2 vm rs2 rs1 14..12=0x0 vs3 6..0=0x27
-vsse256.v       nf 28=1 27..26=2 vm rs2 rs1 14..12=0x5 vs3 6..0=0x27
-vsse512.v       nf 28=1 27..26=2 vm rs2 rs1 14..12=0x6 vs3 6..0=0x27
-vsse1024.v      nf 28=1 27..26=2 vm rs2 rs1 14..12=0x7 vs3 6..0=0x27
 
 # Vector Indexed-Ordered Instructions (including segment part)
 # https://github.com/riscv/riscv-v-spec/blob/master/v-spec.adoc#76-vector-indexed-instructions
@@ -81,29 +57,17 @@ vloxei8.v        nf 28=0 27..26=3 vm vs2 rs1 14..12=0x0  vd 6..0=0x07
 vloxei16.v       nf 28=0 27..26=3 vm vs2 rs1 14..12=0x5  vd 6..0=0x07
 vloxei32.v       nf 28=0 27..26=3 vm vs2 rs1 14..12=0x6  vd 6..0=0x07
 vloxei64.v       nf 28=0 27..26=3 vm vs2 rs1 14..12=0x7  vd 6..0=0x07
-vloxei128.v      nf 28=1 27..26=3 vm vs2 rs1 14..12=0x0  vd 6..0=0x07
-vloxei256.v      nf 28=1 27..26=3 vm vs2 rs1 14..12=0x5  vd 6..0=0x07
-vloxei512.v      nf 28=1 27..26=3 vm vs2 rs1 14..12=0x6  vd 6..0=0x07
-vloxei1024.v     nf 28=1 27..26=3 vm vs2 rs1 14..12=0x7  vd 6..0=0x07
 vsoxei8.v        nf 28=0 27..26=3 vm vs2 rs1 14..12=0x0 vs3 6..0=0x27
 vsoxei16.v       nf 28=0 27..26=3 vm vs2 rs1 14..12=0x5 vs3 6..0=0x27
 vsoxei32.v       nf 28=0 27..26=3 vm vs2 rs1 14..12=0x6 vs3 6..0=0x27
 vsoxei64.v       nf 28=0 27..26=3 vm vs2 rs1 14..12=0x7 vs3 6..0=0x27
-vsoxei128.v      nf 28=1 27..26=3 vm vs2 rs1 14..12=0x0 vs3 6..0=0x27
-vsoxei256.v      nf 28=1 27..26=3 vm vs2 rs1 14..12=0x5 vs3 6..0=0x27
-vsoxei512.v      nf 28=1 27..26=3 vm vs2 rs1 14..12=0x6 vs3 6..0=0x27
-vsoxei1024.v     nf 28=1 27..26=3 vm vs2 rs1 14..12=0x7 vs3 6..0=0x27
 
-# Unit-stride F31..29=0ault-Only-First Loads
+# Unit-stride Fault-Only-First Loads
 # https://github.com/riscv/riscv-v-spec/blob/master/v-spec.adoc#77-unit-stride-fault-only-first-loads
 vle8ff.v         nf 28=0 27..26=0 vm 24..20=0x10 rs1 14..12=0x0  vd 6..0=0x07
 vle16ff.v        nf 28=0 27..26=0 vm 24..20=0x10 rs1 14..12=0x5  vd 6..0=0x07
 vle32ff.v        nf 28=0 27..26=0 vm 24..20=0x10 rs1 14..12=0x6  vd 6..0=0x07
 vle64ff.v        nf 28=0 27..26=0 vm 24..20=0x10 rs1 14..12=0x7  vd 6..0=0x07
-vle128ff.v       nf 28=1 27..26=0 vm 24..20=0x10 rs1 14..12=0x0  vd 6..0=0x07
-vle256ff.v       nf 28=1 27..26=0 vm 24..20=0x10 rs1 14..12=0x5  vd 6..0=0x07
-vle512ff.v       nf 28=1 27..26=0 vm 24..20=0x10 rs1 14..12=0x6  vd 6..0=0x07
-vle1024ff.v      nf 28=1 27..26=0 vm 24..20=0x10 rs1 14..12=0x7  vd 6..0=0x07
 
 # Vector Load/Store Whole Registers
 # https://github.com/riscv/riscv-v-spec/blob/master/v-spec.adoc#79-vector-loadstore-whole-register-instructions
@@ -402,14 +366,14 @@ vzext.vf2      31..26=0x12 vm vs2 19..15=6 14..12=0x2 vd 6..0=0x57
 vsext.vf2      31..26=0x12 vm vs2 19..15=7 14..12=0x2 vd 6..0=0x57
 
 vcompress.vm   31..26=0x17 25=1 vs2 vs1 14..12=0x2 vd 6..0=0x57
-vmandn.mm      31..26=0x18 vm vs2 vs1 14..12=0x2 vd 6..0=0x57
-vmand.mm       31..26=0x19 vm vs2 vs1 14..12=0x2 vd 6..0=0x57
-vmor.mm        31..26=0x1a vm vs2 vs1 14..12=0x2 vd 6..0=0x57
-vmxor.mm       31..26=0x1b vm vs2 vs1 14..12=0x2 vd 6..0=0x57
-vmorn.mm       31..26=0x1c vm vs2 vs1 14..12=0x2 vd 6..0=0x57
-vmnand.mm      31..26=0x1d vm vs2 vs1 14..12=0x2 vd 6..0=0x57
-vmnor.mm       31..26=0x1e vm vs2 vs1 14..12=0x2 vd 6..0=0x57
-vmxnor.mm      31..26=0x1f vm vs2 vs1 14..12=0x2 vd 6..0=0x57
+vmandn.mm      31..26=0x18 25=1 vs2 vs1 14..12=0x2 vd 6..0=0x57
+vmand.mm       31..26=0x19 25=1 vs2 vs1 14..12=0x2 vd 6..0=0x57
+vmor.mm        31..26=0x1a 25=1 vs2 vs1 14..12=0x2 vd 6..0=0x57
+vmxor.mm       31..26=0x1b 25=1 vs2 vs1 14..12=0x2 vd 6..0=0x57
+vmorn.mm       31..26=0x1c 25=1 vs2 vs1 14..12=0x2 vd 6..0=0x57
+vmnand.mm      31..26=0x1d 25=1 vs2 vs1 14..12=0x2 vd 6..0=0x57
+vmnor.mm       31..26=0x1e 25=1 vs2 vs1 14..12=0x2 vd 6..0=0x57
+vmxnor.mm      31..26=0x1f 25=1 vs2 vs1 14..12=0x2 vd 6..0=0x57
 
 vmsbf.m        31..26=0x14 vm vs2 19..15=0x01 14..12=0x2 vd 6..0=0x57
 vmsof.m        31..26=0x14 vm vs2 19..15=0x02 14..12=0x2 vd 6..0=0x57
@@ -485,44 +449,3 @@ vwmaccu.vx     31..26=0x3c vm vs2 rs1 14..12=0x6 vd 6..0=0x57
 vwmacc.vx      31..26=0x3d vm vs2 rs1 14..12=0x6 vd 6..0=0x57
 vwmaccus.vx    31..26=0x3e vm vs2 rs1 14..12=0x6 vd 6..0=0x57
 vwmaccsu.vx    31..26=0x3f vm vs2 rs1 14..12=0x6 vd 6..0=0x57
-
-# Zvamo
-vamoswapei8.v  31..27=0x01 wd vm vs2 rs1 14..12=0x0 vd 6..0=0x2f
-vamoaddei8.v   31..27=0x00 wd vm vs2 rs1 14..12=0x0 vd 6..0=0x2f
-vamoxorei8.v   31..27=0x04 wd vm vs2 rs1 14..12=0x0 vd 6..0=0x2f
-vamoandei8.v   31..27=0x0c wd vm vs2 rs1 14..12=0x0 vd 6..0=0x2f
-vamoorei8.v    31..27=0x08 wd vm vs2 rs1 14..12=0x0 vd 6..0=0x2f
-vamominei8.v   31..27=0x10 wd vm vs2 rs1 14..12=0x0 vd 6..0=0x2f
-vamomaxei8.v   31..27=0x14 wd vm vs2 rs1 14..12=0x0 vd 6..0=0x2f
-vamominuei8.v  31..27=0x18 wd vm vs2 rs1 14..12=0x0 vd 6..0=0x2f
-vamomaxuei8.v  31..27=0x1c wd vm vs2 rs1 14..12=0x0 vd 6..0=0x2f
-
-vamoswapei16.v 31..27=0x01 wd vm vs2 rs1 14..12=0x5 vd 6..0=0x2f
-vamoaddei16.v  31..27=0x00 wd vm vs2 rs1 14..12=0x5 vd 6..0=0x2f
-vamoxorei16.v  31..27=0x04 wd vm vs2 rs1 14..12=0x5 vd 6..0=0x2f
-vamoandei16.v  31..27=0x0c wd vm vs2 rs1 14..12=0x5 vd 6..0=0x2f
-vamoorei16.v   31..27=0x08 wd vm vs2 rs1 14..12=0x5 vd 6..0=0x2f
-vamominei16.v  31..27=0x10 wd vm vs2 rs1 14..12=0x5 vd 6..0=0x2f
-vamomaxei16.v  31..27=0x14 wd vm vs2 rs1 14..12=0x5 vd 6..0=0x2f
-vamominuei16.v 31..27=0x18 wd vm vs2 rs1 14..12=0x5 vd 6..0=0x2f
-vamomaxuei16.v 31..27=0x1c wd vm vs2 rs1 14..12=0x5 vd 6..0=0x2f
-
-vamoswapei32.v 31..27=0x01 wd vm vs2 rs1 14..12=0x6 vd 6..0=0x2f
-vamoaddei32.v  31..27=0x00 wd vm vs2 rs1 14..12=0x6 vd 6..0=0x2f
-vamoxorei32.v  31..27=0x04 wd vm vs2 rs1 14..12=0x6 vd 6..0=0x2f
-vamoandei32.v  31..27=0x0c wd vm vs2 rs1 14..12=0x6 vd 6..0=0x2f
-vamoorei32.v   31..27=0x08 wd vm vs2 rs1 14..12=0x6 vd 6..0=0x2f
-vamominei32.v  31..27=0x10 wd vm vs2 rs1 14..12=0x6 vd 6..0=0x2f
-vamomaxei32.v  31..27=0x14 wd vm vs2 rs1 14..12=0x6 vd 6..0=0x2f
-vamominuei32.v 31..27=0x18 wd vm vs2 rs1 14..12=0x6 vd 6..0=0x2f
-vamomaxuei32.v 31..27=0x1c wd vm vs2 rs1 14..12=0x6 vd 6..0=0x2f
-
-vamoswapei64.v 31..27=0x01 wd vm vs2 rs1 14..12=0x7 vd 6..0=0x2f
-vamoaddei64.v  31..27=0x00 wd vm vs2 rs1 14..12=0x7 vd 6..0=0x2f
-vamoxorei64.v  31..27=0x04 wd vm vs2 rs1 14..12=0x7 vd 6..0=0x2f
-vamoandei64.v  31..27=0x0c wd vm vs2 rs1 14..12=0x7 vd 6..0=0x2f
-vamoorei64.v   31..27=0x08 wd vm vs2 rs1 14..12=0x7 vd 6..0=0x2f
-vamominei64.v  31..27=0x10 wd vm vs2 rs1 14..12=0x7 vd 6..0=0x2f
-vamomaxei64.v  31..27=0x14 wd vm vs2 rs1 14..12=0x7 vd 6..0=0x2f
-vamominuei64.v 31..27=0x18 wd vm vs2 rs1 14..12=0x7 vd 6..0=0x2f
-vamomaxuei64.v 31..27=0x1c wd vm vs2 rs1 14..12=0x7 vd 6..0=0x2f

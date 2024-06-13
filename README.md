@@ -24,7 +24,7 @@ tools and projects like Spike, PK, RISC-V Manual, etc.
 
 This project follows a very specific file structure to define the instruction encodings. All files
 containing instruction encodings start with the prefix `rv`. These files can either be present in
-the root directory (if the instructions have been ratified) of the `unratified` directory. The exact
+the root directory (if the instructions have been ratified) or the `unratified` directory. The exact
 file-naming policy and location is as mentioned below:
 
 1. `rv_x` - contains instructions common within the 32-bit and 64-bit modes of extension X.
@@ -46,8 +46,10 @@ Instruction syntaxes used in this project are broadly categorized into three:
 - **regular instructions** :- these are instructions which hold a unique opcode in the encoding space. A very generic syntax guideline 
   for these instructions is as follows:
   ```
-  <instruction name> <instruction args> <bit-encodings>
+  <instruction name> <arguments>
   ```
+  where `<argument>` is either `<bit encoding>` or `<variable argument>`.
+
   Examples:
   ```
   lui     rd imm20 6..2=0x0D 1..0=3
