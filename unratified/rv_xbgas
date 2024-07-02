@@ -23,24 +23,24 @@ eaddi  rd rs1 imm12   14..12=2 6..2=0x1E 1..0=3
 eaddie rd rs1 imm12   14..12=5 6..2=0x1E 1..0=3
 eaddix rd rs1 imm12   14..12=4 6..2=0x1E 1..0=3
 # Bulk load instructions
-eblw   rd rs1 rs2 rs3   26..25=3 14..12=6 6..2=0x17 1..0=3
-eblh   rd rs1 rs2 rs3   26..25=3 14..12=1 6..2=0x17 1..0=3
-eblhu  rd rs1 rs2 rs3   26..25=3 14..12=5 6..2=0x17 1..0=3
-eblb   rd rs1 rs2 rs3   26..25=3 14..12=0 6..2=0x17 1..0=3
-eblbu  rd rs1 rs2 rs3   26..25=3 14..12=4 6..2=0x17 1..0=3
+eblw   rd rs1 rs2 rs3   26..25=3 14..12=6 6..2=0x16 1..0=3
+eblh   rd rs1 rs2 rs3   26..25=3 14..12=1 6..2=0x16 1..0=3
+eblhu  rd rs1 rs2 rs3   26..25=3 14..12=5 6..2=0x16 1..0=3
+eblb   rd rs1 rs2 rs3   26..25=3 14..12=0 6..2=0x16 1..0=3
+eblbu  rd rs1 rs2 rs3   26..25=3 14..12=4 6..2=0x16 1..0=3
 # Bulk store instructions
-ebsw   rd rs1 rs2 rs3   26..25=2 14..12=6 6..2=0x17 1..0=3
-ebsh   rd rs1 rs2 rs3   26..25=2 14..12=1 6..2=0x17 1..0=3
-ebsb   rd rs1 rs2 rs3   26..25=2 14..12=0 6..2=0x17 1..0=3
+ebsw   rd rs1 rs2 rs3   26..25=2 14..12=6 6..2=0x16 1..0=3
+ebsh   rd rs1 rs2 rs3   26..25=2 14..12=1 6..2=0x16 1..0=3
+ebsb   rd rs1 rs2 rs3   26..25=2 14..12=0 6..2=0x16 1..0=3
 # Atomic operations
-elr.w      rd rs1     31..27=0b00010 24..20=0 14..12=2 6..2=0x1A 1..0=3
-esc.w      rd rs2 rs1 31..27=0b00011 14..12=2 6..2=0x1A 1..0=3
-eamoswap.w rd rs2 rs1 31..27=0b00001 14..12=2 6..2=0x1A 1..0=3
-eamoadd.w rd rs2 rs1  31..27=0b00000 14..12=2 6..2=0x1A 1..0=3
-eamoxor.w rd rs2 rs1  31..27=0b00100 14..12=2 6..2=0x1A 1..0=3
-eamoand.w rd rs2 rs1  31..27=0b01100 14..12=2 6..2=0x1A 1..0=3
-eamoor.w rd rs2 rs1   31..27=0b01000 14..12=2 6..2=0x1A 1..0=3
-eamomin.w rd rs2 rs1  31..27=0b10000 14..12=2 6..2=0x1A 1..0=3
-eamomax.w rd rs2 rs1  31..27=0b10100 14..12=2 6..2=0x1A 1..0=3
-eamominu.w rd rs2 rs1 31..27=0b11000 14..12=2 6..2=0x1A 1..0=3
-eamomaxu.w rd rs2 rs1 31..27=0b11100 14..12=2 6..2=0x1A 1..0=3
+elr.w      rd rs1 24..20=0 aq rl 31..29=0 28..27=2 14..12=2 6..2=0x1A 1..0=3
+esc.w      rd rs1 rs2      aq rl 31..29=0 28..27=3 14..12=2 6..2=0x1A 1..0=3
+eamoswap.w rd rs1 rs2      aq rl 31..29=0 28..27=1 14..12=2 6..2=0x1A 1..0=3
+eamoadd.w  rd rs1 rs2      aq rl 31..29=0 28..27=0 14..12=2 6..2=0x1A 1..0=3
+eamoxor.w  rd rs1 rs2      aq rl 31..29=1 28..27=0 14..12=2 6..2=0x1A 1..0=3
+eamoand.w  rd rs1 rs2      aq rl 31..29=3 28..27=0 14..12=2 6..2=0x1A 1..0=3
+eamoor.w   rd rs1 rs2      aq rl 31..29=2 28..27=0 14..12=2 6..2=0x1A 1..0=3
+eamomin.w  rd rs1 rs2      aq rl 31..29=4 28..27=0 14..12=2 6..2=0x1A 1..0=3
+eamomax.w  rd rs1 rs2      aq rl 31..29=5 28..27=0 14..12=2 6..2=0x1A 1..0=3
+eamominu.w rd rs1 rs2      aq rl 31..29=6 28..27=0 14..12=2 6..2=0x1A 1..0=3
+eamomaxu.w rd rs1 rs2      aq rl 31..29=7 28..27=0 14..12=2 6..2=0x1A 1..0=3
