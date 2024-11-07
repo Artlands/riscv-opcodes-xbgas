@@ -1,5 +1,5 @@
 # Extended xBGAS load instructions
-elw    rd rs1 imm12   14..12=6 6..2=0x1D 1..0=3
+elw    rd rs1 imm12   14..12=2 6..2=0x1D 1..0=3
 elh    rd rs1 imm12   14..12=1 6..2=0x1D 1..0=3
 elhu   rd rs1 imm12   14..12=5 6..2=0x1D 1..0=3
 elb    rd rs1 imm12   14..12=0 6..2=0x1D 1..0=3
@@ -9,7 +9,7 @@ esw    rs2 rs1 imm12hi imm12lo   14..12=6 6..2=0x1E 1..0=3
 esh    rs2 rs1 imm12hi imm12lo   14..12=1 6..2=0x1E 1..0=3
 esb    rs2 rs1 imm12hi imm12lo   14..12=0 6..2=0x1E 1..0=3
 # Raw Integer load instructions
-erlw   rd rs1 rs2   31..25=86 14..12=6 6..2=0x0C 1..0=3
+erlw   rd rs1 rs2   31..25=86 14..12=2 6..2=0x0C 1..0=3
 erlh   rd rs1 rs2   31..25=86 14..12=1 6..2=0x0C 1..0=3
 erlhu  rd rs1 rs2   31..25=86 14..12=5 6..2=0x0C 1..0=3
 erlb   rd rs1 rs2   31..25=86 14..12=0 6..2=0x0C 1..0=3
@@ -23,11 +23,9 @@ eaddi  rd rs1 imm12   14..12=2 6..2=0x1E 1..0=3
 eaddie rd rs1 imm12   14..12=5 6..2=0x1E 1..0=3
 eaddix rd rs1 imm12   14..12=4 6..2=0x1E 1..0=3
 # Bulk load instructions
-eblw   rd rs1 rs2 rs3   26..25=3 14..12=6 6..2=0x16 1..0=3
+eblw   rd rs1 rs2 rs3   26..25=3 14..12=2 6..2=0x16 1..0=3
 eblh   rd rs1 rs2 rs3   26..25=3 14..12=1 6..2=0x16 1..0=3
-eblhu  rd rs1 rs2 rs3   26..25=3 14..12=5 6..2=0x16 1..0=3
 eblb   rd rs1 rs2 rs3   26..25=3 14..12=0 6..2=0x16 1..0=3
-eblbu  rd rs1 rs2 rs3   26..25=3 14..12=4 6..2=0x16 1..0=3
 # Bulk store instructions
 ebsw   rd rs1 rs2 rs3   26..25=2 14..12=6 6..2=0x16 1..0=3
 ebsh   rd rs1 rs2 rs3   26..25=2 14..12=1 6..2=0x16 1..0=3
