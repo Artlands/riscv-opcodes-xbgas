@@ -6,9 +6,9 @@ ele    rd rs1 imm12   14..12=7 6..2=0x1D 1..0=3
 esd    rs2 rs1 imm12hi imm12lo   14..12=3 6..2=0x1E 1..0=3
 ese    rs2 rs1 imm12hi imm12lo   14..12=7 6..2=0x1E 1..0=3
 # Raw Integer load instructions
-erlwu  rd rs1 rs2   31..25=86 14..12=6 6..2=0x0C 1..0=3
-erld   rd rs1 rs2   31..25=86 14..12=3 6..2=0x0C 1..0=3
-erle   rd rs1 rs2   31..25=86 14..12=7 6..2=0x0C 1..0=3
+erlwu  rd rs1 rs2   31..25=85 14..12=6 6..2=0x0C 1..0=3
+erld   rd rs1 rs2   31..25=85 14..12=3 6..2=0x0C 1..0=3
+erle   rd rs1 rs2   31..25=85 14..12=7 6..2=0x0C 1..0=3
 # Raw Integer store instructions
 ersd   rs1 rs2 rd   31..25=34 14..12=3 6..2=0x0C 1..0=3
 erse   rs1 rs2 rd   31..25=34 14..12=7 6..2=0x0C 1..0=3
